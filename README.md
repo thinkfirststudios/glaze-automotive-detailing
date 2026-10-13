@@ -13,7 +13,7 @@ Built 2026-10-12 from `PROMPT.md`. Plain static HTML/CSS/JS, no build step. Open
 
 | File | What it is |
 |---|---|
-| `index.html` | Includes:<br>• occlusion hero (GLAZE behind the car)<br>• advantage band<br>• 3 steps<br>• 10 service cards (four considered purchases shown first, larger)<br>• matte→gloss slider and 4 pairs<br>• packages (the one light panel)<br>• the high-ticket four<br>• radius map and 20 area chips<br>• licence claim and payments<br>• about<br>• review slots<br>• quote form |
+| `index.html` | Includes:<br>• hero (GLAZE wordmark over a natural stock photo)<br>• advantage band<br>• 3 steps<br>• 10 service cards (four considered purchases shown first, larger)<br>• before/after slider and 4 pairs (each "before" is a client-supply panel)<br>• packages (the one light panel)<br>• the high-ticket four<br>• radius map and 20 area chips<br>• licence claim and payments<br>• about<br>• review slots<br>• quote form |
 | 10 service pages | `interior-detailing` · `exterior-detailing` · `ceramic-coating` · `paint-correction` · `headlight-restoration` · `ozone-odour-treatment` · `clay-bar-polish` · `pet-hair-removal` · `vinyl-wrap-removal` · `ppf-removal`. Each covers its process, with every unknown flagged |
 | `mobile-detailing-tampa` · `-wesley-chapel` · `-clearwater` | **Three worked example location pages.** Area prose is a visible client-supply flag. FAQs and nearby links differ per area (by real geography) |
 | `mobile-detailing-tampa-bay.html` | The hub, linking all twenty |
@@ -29,9 +29,9 @@ Built 2026-10-12 from `PROMPT.md`. Plain static HTML/CSS/JS, no build step. Open
 - **Specular rake:** one hard band at a fixed 105°. It fires once, on reveal, on the GLAZE wordmark, the advantage band, the package row and the radius map. It never loops.
 - **Reflection pools:** soft elliptical pools under cards (static).
 - **Wet-edge transitions:** a 1px specular line with a 4px soft bloom. It draws in left to right.
-- **Before/after:** the slider is matte → gloss. The drag drives the effect, not a timer.
+- **Before/after (v2):** the "before" side of the slider and of every pair is a labelled client-supply panel, not a regraded copy of the stock photo.
 - **Not used:** chrome fills, icon grids, droplets, suds and count-ups.
-- **Occlusion:** the hero is two layers of the same photo, a full background plus a cut-out of the car in front. That lets the roofline pass in front of the GLAZE lettering on both desktop and phone.
+- **Photos (v2, 2026-10-13):** every image is plain stock with a light natural grade. The earlier cut-out occlusion hero and green LUT were removed at Alex's request because they read as generated. The hero has a separate phone crop.
 
 ## Required checks (run on all built HTML, CSS and JS)
 
@@ -43,9 +43,9 @@ Built 2026-10-12 from `PROMPT.md`. Plain static HTML/CSS/JS, no build step. Open
 - **Marques:** none in any copy or alt text, and the legible wheel marks are blurred.
 - **Colours:** none outside the neutral and green family.
 
-## ⚠️ Before/after is illustrative
+## Before/after
 
-The "matte" side of every pair is the **same stock photo with a flat grade applied**. That is labelled on the page. It shows the device; it is not evidence of a result.
+The slots are built and labelled. They need a real before/after pair of the same vehicle from Glaze. Stock is never shown as a result.
 
 ## Not built (notes for Alex)
 
