@@ -386,3 +386,33 @@ h3.display { font-size: clamp(1.9rem, 3.4vw, 2.8rem); font-weight: 800; }
   .hero-bg { height: 100%; top: 0; bottom: auto; object-position: 50% 40%; }
   .hero-word { font-size: 30vw; }
 }
+
+/* ---------- v3: brighter (Alex, 2026-10-13: "it is really dark") ----------
+   Bright daylight hero, lighter scrim, base surfaces lifted a step, jade used more. */
+:root {
+  --lacquer: #0C211A;
+  --lacquer-2: #112B22;
+  --panel: #17372D;
+  --panel-2: #1F4537;
+  --rule: #2A5245;
+  --muted: #9DB8AD;
+  --jade: #22B587;
+  --jade-wash: rgba(34, 181, 135, .14);
+}
+body { background: radial-gradient(1200px 600px at 85% 0%, rgba(34,181,135,.10), transparent 70%), var(--lacquer); }
+.hero { background: #2A2622; }
+.hero-bg { object-position: 50% 62%; }
+.hero-word { color: var(--lacquer); opacity: .88; mix-blend-mode: normal; }
+.hero::after { background: linear-gradient(0deg, var(--lacquer) 3%, rgba(12,33,26,.82) 24%, rgba(12,33,26,.35) 44%, rgba(12,33,26,0) 60%); }
+.hero h1 { text-shadow: 0 2px 24px rgba(0,0,0,.35); }
+.section--alt, .band { background: var(--lacquer-2); }
+@media (max-width: 899px) {
+  .hero-bg { object-position: 50% 40%; }
+  .hero::after { background: linear-gradient(0deg, var(--lacquer) 6%, rgba(12,33,26,.85) 40%, rgba(12,33,26,.2) 62%, rgba(12,33,26,0) 75%); }
+}
+@media (max-width: 899px) {
+  .hero picture .hero-bg, .hero-bg { height: min(118vw, 520px); top: 0; bottom: auto; object-position: 50% 78%; }
+  .hero::after { background: linear-gradient(180deg, rgba(12,33,26,0) 0, rgba(12,33,26,0) calc(min(118vw, 520px) - 140px), var(--lacquer) min(118vw, 520px)); }
+  .hero-inner { padding-top: calc(min(118vw, 520px) - 40px); }
+  .hero-word { top: 18px; }
+}
